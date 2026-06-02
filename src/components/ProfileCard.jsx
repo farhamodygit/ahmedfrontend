@@ -7,7 +7,7 @@ import {
   FaCode,
 } from "react-icons/fa";
 
-const API_BASE = import.meta.env.VITE_API_URL || (window.location.hostname === "localhost" ? "/api" : "https://ahmed2-byfv.onrender.com/api");
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "/api" : "https://ahmed2-byfv.onrender.com/api");
 
 function ProfileCard() {
   const [imageSrc, setImageSrc] = useState(null);
